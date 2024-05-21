@@ -1,0 +1,102 @@
+
+html{
+
+}
+#osm-map{
+	height:calc(100vh - 64px);
+	display:block;z-index:0;
+	position:sticky!important;
+	top:64px;
+	width:100%
+}
+#application{
+}
+
+.v-bottom-navigation{
+	bottom:0px;
+	position:absolute;
+}
+
+.container{
+	background:WhiteSmoke;
+}
+
+.v-input{
+
+	max-width:300px;
+}
+
+
+
+
+
+.v-input{
+	color:red !important; 
+}
+
+.cursor-pointer {
+	cursor: pointer !important;
+}
+
+#navigation_drawer {
+	cursor: pointer !important;
+}
+
+.v-toolbar-title {
+	cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.autoSuggest xl{
+	z-index: 1;
+	position: absolute;
+	margin-left:20%;
+	max-width:300px;
+	top:60px;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+.autoSuggest xl{
+	z-index: 1;
+	position: absolute;
+	margin-left:20%;
+	max-width:300px;
+	top:60px;
+}}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+.autoSuggest xl{
+	z-index: 1;
+	position: absolute;
+	margin-left:20%;
+	max-width:300px;
+	top:60px;
+}}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.autoSuggest {
+
+	margin-left:20%;
+	max-width:300px;
+
+}
+
+	}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+.autoSuggest {
+
+	margin-left:22%;
+	max-width:300px;
+}
+	
+	}

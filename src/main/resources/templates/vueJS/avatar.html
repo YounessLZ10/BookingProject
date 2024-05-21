@@ -1,0 +1,16 @@
+<div>
+<v-avatar
+		v-if="avatar.src!=null"
+  		color="white"
+  		:size="size">        <img
+          v-bind:src="avatar.src"
+          alt="John"
+        ></v-avatar>
+         <v-avatar
+         		v-if="avatar.initials!=null"
+                color="brown"
+                :size="size"
+              >
+                <span class="white--text headline">{{ avatar.initials}} </span>
+              </v-avatar>
+              </div>

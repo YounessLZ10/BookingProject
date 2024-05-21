@@ -1,0 +1,15 @@
+{{> include/header}}
+<drawer :user="user" ref="drawer"></drawer>
+<bar @toggle-drawer="$refs.drawer.drawer = !$refs.drawer.drawer"></bar>
+<v-content>
+<v-container>
+   <v-row justify="center">
+<new-lodgement-button v-on:addtolist="addLodgementToList">Ajouter un logement</new-lodgement-button>
+   </v-row>
+</v-container>
+<v-container>
+   <lodgement-list v-if="lodgements.length!==0" :lodgements="lodgements" :title="'Mes Logements en ligne'"></lodgement-list>
+   <lodgement-list style="margin-top:50px;" v-if="disabledLodgements.length!==0" :lodgements="disabledLodgements" :title="'Mes Logements Hors Ligne'"></lodgement-list>
+</v-container>
+</v-content>
+{{> include/footer}}

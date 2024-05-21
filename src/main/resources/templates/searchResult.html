@@ -1,0 +1,27 @@
+{{> include/header}}
+<drawer :user="user" ref="drawer"></drawer>
+<bar-search @toggle-drawer="$refs.drawer.drawer = !$refs.drawer.drawer" app></bar-search>
+<v-content>
+<v-container fluid style="
+  padding:0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;"
+  >
+<v-row
+   no-gutters
+   >
+   <v-col
+      cols="7"
+      >
+            <search-results v-if="result!==null" :result="result" :nbr="nbr" :start="start" :end="end" ref="searchResults"></search-results>
+   </v-col>
+   <v-col
+      cols="5"
+      >
+      <div id="osm-map"></div>
+   </v-col>
+</v-row>
+</v-container>
+</v-content>
+{{> include/footer}}
